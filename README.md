@@ -29,25 +29,25 @@ O que veremos na aula de hoje?
  <br>
  
 ### Introdução: Javascript não é Java
-  ( Penso eu que ) Muitas de vocês provavelmente já ouviram falar da linguagem de programação JAVA pois essa linguagem é muito famosa no mundo da programação mas é completamente normal que vocês não saibam a diferença entre essas duas linguagens - e que até pensem que uma é apenas o apelido carinhoso da outra - mas JAVA e JAVASCRIPT linguagens são muito diferentes, tanto na sua syntaxe ( a forma como são escritas ) quanto em suas finalidades.
+  ( Penso eu que ) Muitas de vocês provavelmente já ouviram falar da linguagem de programação JAVA pois essa linguagem é muito famosa no mundo da programação , a boa notícia é que: é completamente normal - até entre pessoas que já conhecem um pouco de programação - que algumas pessoas não saibam a diferença entre essas duas linguagens, vou adiantar pra vocês que JAVA e JAVASCRIPT são linguagens muito diferentes, tanto na sua syntaxe ( a forma como são escritas ) quanto em suas finalidades.
   
-  Ao longo de sua caminhada você saberá ver a diferença entre elas, mas se ficou curiosa pode [acessar aqui](https://www.java.com/pt-BR/download/help/java_javascript_pt-br.html#:~:text=Diferenças-chave%20entre%20o%20Java,executado%20apenas%20em%20um%20browser.) e ver as principais diferenças entre as duas linguagens de programação.
+  Ao longo de sua caminhada você saberá ver a diferença entre elas, mas se ficou curiosa e não quer esperar pode [acessar aqui](https://www.java.com/pt-BR/download/help/java_javascript_pt-br.html#:~:text=Diferenças-chave%20entre%20o%20Java,executado%20apenas%20em%20um%20browser.) e ver as principais diferenças entre as duas.
   <br>
 
 ### Por que Javascript?
-  O Javascript nasceu da necessidade de tornar as páginas web mais dinâmicas, mas desde então cresceu e superou enormemente as expectativas até que hoje é maioral para as aplicações client-side ( famoso front-end ).
+  O Javascript nasceu da necessidade de tornar as páginas web mais dinâmicas, e desde então cresceu tanto que superou enormemente as expectativas até se tornar a maioral para as aplicações client-side ( famoso front-end ). 
 
-  Não apenas no front-end mas javascript também mostrou ser uma ótima alternativa também em aplicações server-side ( back-end ), e por isso é considerada a **Número 1** na lista das linguagens de programação mais indicada para a web - [segundo a geeksforgeeks](https://www.geeksforgeeks.org/10-backend-programming-languages-for-web-developers-in-2022/).
+  Não apenas no front-end mas javascript também mostrou ser uma ótima alternativa também em aplicações server-side ( back-end ), e por isso é considerada a **Número 1** na lista das linguagens de programação mais indicadas para a web - [segundo a geeksforgeeks](https://www.geeksforgeeks.org/10-backend-programming-languages-for-web-developers-in-2022/).
 
   Javascript tem uma comunidade muito ativa e numerosa, isso faz com que seja muito fácil encontrar diversos conteúdos para melhorar seu nível de código, além de várias bibliotecas pra colocar em seus projetos. O javascript tem uma linha de aprendizado muito boa para quem está começando pois conta com documentações muito claras e detalhadas das funcionalidades nativas da linguagem.
 
-  Para estiver interessado em começar a aprender essa linguagem as notícias não poderiam ser melhores , afinal hoje é muito comum ver diversas empresas - nacionais e internacionais - que estão em busca de bons desenvolvedores Javascript para criar e dar manutenção a sistemas criados para a web. Algumas empresas que utilizam Javascript: Netflix, Uber e LinkedIn.
+  Para quem estiver interessado em começar a aprender essa linguagem as notícias não poderiam ser melhores afinal hoje é muito comum ver diversas empresas - nacionais e internacionais - que estão em busca de bons desenvolvedores Javascript para criar e dar manutenção a sistemas criados para a web. Algumas empresas que talvez vocês conheçam utilizam Javascript: Netflix, Uber e LinkedIn.
   <br>
 
 ### NodeJS
   Vamos ser simples: O NodeJS executa códigos javascript fora de um navegador.
   
-  Como o Javascript foi escrito - em sua natureza - para a WEB os navegadores tem um mecanismo que é capaz de ler javascript e executar. Se você tirar essa peça do navegador você terá um NodeJS. Veja a imagem abaixo
+  Como o Javascript foi escrito - em sua natureza - para a WEB os navegadores tem um mecanismo que é capaz de ler javascript e executar. Se você tirar essa peça do navegador você terá uma **engine** que é a peça principal para o NodeJS funcionar. Essa ilustração talvez possa te ajudar ~~ou não~~
   
   ![nodejs](assets/nodejs.png)
 Baixe o NODEJS para seu computador [aqui](https://nodejs.org/en/download/)
