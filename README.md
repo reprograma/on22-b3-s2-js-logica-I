@@ -13,52 +13,77 @@ Antes de começar, vamos organizar nosso setup.
 * Entre na pasta do seu repositório (Para isso basta abrir o seu terminal e digitar `cd nome-do-seu-repositorio-forkado`)
 * [Add outras intrucoes caso necessario]
 
-### Resumo
+### **Resumo**
 O que veremos na aula de hoje?
-* [Tema1](#tema1)
-* [Tema2](#tema2)
-* [Tema3](#tema3)
 
-## Conteúdo
-### Tema1 
-1. [Tópico 1](#topico1)
-2. [Tópico 2](#topico2)
-### Tema2 
-1. [Tópico 3](#topico3)
-   * [Subtópico 1](#subtopico1)
-   * [Subtópico 2](#subtopico2)
-   
-### Tema3
-1. [Tópico 4](#topico4)
+* O que é Javascript
+* Variáveis
+* Tipos de dados
+* Operadores
+  
+<br>
 
-### Tema1 
+# **Conteúdo**
 
-#### Topico1
+## O que é Javascript
+ <br>
+ 
+### Introdução: Javascript não é Java
+  ( Penso eu que ) Muitas de vocês provavelmente já ouviram falar da linguagem de programação JAVA pois essa linguagem é muito famosa no mundo da programação mas é completamente normal que vocês não saibam a diferença entre essas duas linguagens - e que até pensem que uma é apenas o apelido carinhoso da outra - mas JAVA e JAVASCRIPT linguagens são muito diferentes, tanto na sua syntaxe ( a forma como são escritas ) quanto em suas finalidades.
+  
+  Ao longo de sua caminhada você saberá ver a diferença entre elas, mas se ficou curiosa pode [acessar aqui](https://www.java.com/pt-BR/download/help/java_javascript_pt-br.html#:~:text=Diferenças-chave%20entre%20o%20Java,executado%20apenas%20em%20um%20browser.) e ver as principais diferenças entre as duas linguagens de programação.
+  <br>
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam leo nibh, tempus sed rhoncus et, ultrices vitae orci. Donec erat mauris, laoreet in tortor vel, eleifend suscipit nibh. Mauris pharetra dui quis turpis rutrum blandit. Nunc tempor libero tortor, ac commodo erat porttitor ut. Donec vitae orci arcu. Nunc felis mi, maximus a turpis a, mollis pulvinar enim. Vivamus aliquam ante dui, a blandit massa rutrum et. Etiam hendrerit gravida ultrices. Nunc ante massa, dictum eget justo eget, feugiat tincidunt metus.
+### Por que Javascript?
+  O Javascript nasceu da necessidade de tornar as páginas web mais dinâmicas, mas desde então cresceu e superou enormemente as expectativas até que hoje é maioral para as aplicações client-side ( famoso front-end ).
 
- #### Topico2
-  - Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-  - Donec erat mauris, laoreet in tortor vel
-  - Nunc ante massa, dictum eget justo eget, feugiat tincidunt.
+  Não apenas no front-end mas javascript também mostrou ser uma ótima alternativa também em aplicações server-side ( back-end ), e por isso é considerada a **Número 1** na lista das linguagens de programação mais indicada para a web - [segundo a geeksforgeeks](https://www.geeksforgeeks.org/10-backend-programming-languages-for-web-developers-in-2022/).
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam leo nibh, tempus sed rhoncus et, ultrices vitae orci. Donec erat mauris, laoreet in tortor vel, eleifend suscipit nibh. Mauris pharetra dui quis turpis rutrum blandit.
+  Javascript tem uma comunidade muito ativa e numerosa, isso faz com que seja muito fácil encontrar diversos conteúdos para melhorar seu nível de código, além de várias bibliotecas pra colocar em seus projetos. O javascript tem uma linha de aprendizado muito boa para quem está começando pois conta com documentações muito claras e detalhadas das funcionalidades nativas da linguagem.
 
-### Tema2
-#### Topico3
-* [Subtópico 1](#subtopico1)
-* [Subtópico 2](#Subtopico2)
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam leo nibh, tempus sed rhoncus et, ultrices vitae orci. Donec erat mauris, laoreet in tortor vel.
+  Para estiver interessado em começar a aprender essa linguagem as notícias não poderiam ser melhores , afinal hoje é muito comum ver diversas empresas - nacionais e internacionais - que estão em busca de bons desenvolvedores Javascript para criar e dar manutenção a sistemas criados para a web. Algumas empresas que utilizam Javascript: Netflix, Uber e LinkedIn.
+  <br>
 
-##### Subtopico1
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam leo nibh, tempus sed rhoncus et, ultrices vitae orci. Donec erat mauris, laoreet in tortor vel.
+### NodeJS
+  Vamos ser simples: O NodeJS executa códigos javascript fora de um navegador.
+  
+  Como o Javascript foi escrito - em sua natureza - para a WEB os navegadores tem um mecanismo que é capaz de ler javascript e executar. Se você tirar essa peça do navegador você terá um NodeJS. Veja a imagem abaixo
+  
+  ![nodejs](assets/nodejs.png)
+Baixe o NODEJS para seu computador [aqui](https://nodejs.org/en/download/)
 
-##### Subtopico2
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam leo nibh, tempus sed rhoncus et, ultrices vitae orci. Donec erat mauris, laoreet in tortor vel.
+  - **Console**
+    Como normalmente o navegador é responsável por "exibir" a execução de códigos Javascript contidos nas páginas web. Se o NODEJS está fora do navegador, como conseguimos observar as saídas de execução de nossos códigos Javascript? A resposta é: Pelo console.
 
-### Tema3
-#### Topico4
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam leo nibh, tempus sed rhoncus et, ultrices vitae orci. Donec erat mauris, laoreet in tortor vel, eleifend suscipit nibh. Mauris pharetra dui quis turpis rutrum blandit. Nunc tempor libero tortor, ac commodo erat porttitor ut. Donec vitae orci arcu. Nunc felis mi, maximus a turpis a, mollis pulvinar enim. Vivamus aliquam ante dui, a blandit massa rutrum et. Etiam hendrerit gravida ultrices.
+## Variáveis
+ 
+### Declaração
+ Declarar uma variável faz com que o NodeJS diga ao nosso computador separar um espaço na memória. Para isso usamos a palavra reservada do Javascript: `var` assim, o computador estará pronto para separar um espaço na memória e dar um nome a ela.
+
+ Veja o exemplo abaixo:
+
+ ```Javascript
+ var nomeDaMinhaVariavel
+ ```
+
+ Isso é o suficiente para declararmos um espaço na memória que se chamará `nomeDaMinhaVariavel`. Podemos usar a analogia de que se a memória do computador fosse uma gaveta, o nome da variável seria a etiqueta. Dessa forma sempre que quiséssemos **recuperar** esse valor só precisaríamos ir até a gaveta com aquela etiqueta.
+
+### Inicialização
+O valor daquele espaço só será preenchido quando inicializarmos aquela variável.
+
+Veja o exemplo de uma variável inicializada:
+
+ ```Javascript
+ var nomeDaMinhaVariavel = "Aprender com reprograma é bom demais"
+ ```
+
+ Agora sim, eu acabei de pegar uma frase - vamos chamar de string de agora em diante, ta? - e jogar dentro da minha gaveta com a etiqueta `nomeDaMinhaVariável`
+
+ Aqui vai uma ilustração:
+ ![Variaveis](assets/variaveis.png)
+### Tipos de dados
+
+### Operadores
 
 ***
 ### Exercícios 
