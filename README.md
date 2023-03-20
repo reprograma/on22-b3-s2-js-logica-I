@@ -35,7 +35,10 @@ O que veremos na aula de hoje?
   <br>
 
 ### Por que Javascript?
-  O Javascript nasceu da necessidade de tornar as páginas web mais dinâmicas, e desde então cresceu tanto que superou enormemente as expectativas até se tornar a maioral para as aplicações client-side ( famoso front-end ). 
+
+O Javascript é uma linguagem dinâmica e fracamente tipada. Isso significa que a linguagem não **impõe** regras muito fortes quando você está utilizando ela, além de que ela tem diversas funções nativas para manipular estruturas de dados, permitindo assim que você tenha pouco esforço para começar a codar coisas simples com ela. A linguagem fará boa parte do trabalho pesado pra você.
+
+  É bom lembrar nasceu da necessidade de tornar as páginas web mais dinâmicas, e desde então cresceu tanto que superou enormemente as expectativas até se tornar a maioral para as aplicações client-side ( famoso front-end ).
 
   Não apenas no front-end mas javascript também mostrou ser uma ótima alternativa também em aplicações server-side ( back-end ), e por isso é considerada a **Número 1** na lista das linguagens de programação mais indicadas para a web - [segundo a geeksforgeeks](https://www.geeksforgeeks.org/10-backend-programming-languages-for-web-developers-in-2022/).
 
@@ -85,7 +88,7 @@ Veja o exemplo de uma variável inicializada:
  ### let e var
 Existe duas formas de declarar variáveis no Javascript, uma é utilizando a palavra reservada `var` como apresentei lá em cima, porém, existe também a outra forma de declarar uma variável utilizando a palavra reservada `let`.
 
-Podemos declarar dessas duas formas, mas por enquanto vamos priorizar usar `var` pois existe uma certa diferença entre elas. Vamos dizer que o `let` é usado dentro de **blocos** enquanto o `var` normalmente é usado dentro das funções;
+Podemos declarar dessas duas formas, mas por enquanto vamos priorizar usar `let` pois existe uma certa diferença entre elas. Vamos dizer que o `let` é usado dentro de **blocos** enquanto o `var` normalmente é usado dentro das funções e podem inferir alguns comportamentos que não desejamos;
 
 O termo de variável significa que o valor ou tipo que será armazenado poderá ser alterado ao longo da execução do seu código.
 
@@ -95,7 +98,10 @@ O preço da picanha, sabemos que desde 2023 o preço da picanha vem diminuindo n
 ```Javascript
 var valorDaPicanha = 29.00
 ```
+É importante saber que: Ao declarar variáveis você pode escolher o nome que quiser pra elas, mas o Javascript não vai permitir que você:
 
+- Crie variáveis que começam com números
+- Variáveis com espaço. Ex: `var Esse nome` não é uma variável válida
 ### Const
 Como na matemática, na programação também temos valores que podem mudar ( variáveis ) e valores constantes, mas no Javascript para declarar um valor que não sofrerá alteração temos a palavra reservada `const`.
 
@@ -112,22 +118,205 @@ const valorDePi = 3.14
 ```
 
 Ao longo de seu aprendizado você saberá quando usar uma constante ou uma variáviável.
+
+### Palavras reservadas
+O Javascript tem um dicionário de palavras especiais que tem comportamentos específicos quando o interpretador as lê. Já vimos que o `var`,`let` e `const` são palavras do Javascript para declarar variáveis e constantes. O mesmo acontece para outras palavras , como por exemplo a palavra `function` e etc...
+
+Existem pelo menos uma centena de palavras reservadas que o javascript utiliza, essas palavras recebem o nome de **palavras reservadas** pois elas são utilizadas pela linguagem para declarar comportamentos que serão lidos pelo interpretador e por esse motivo elas não podem ser usadas como nomes de variáveis.
+
+A IDE irá sempre indicar quando você usar uma palavra reservada então não precisa se precoupar em decorar todas.
+
+### Console.log
+~~É a ferramenta de debug de todo desenvolvidor javascript~~
+
+A classe nativa do Javascript `Console()` é bastante útil quando estamos querendo exibir a saída de dados. O método `log` permite que consigamos escrever diretamente no console.
+
+```Javascript
+console.log("Essa mensagem aparecerá no console do navegador, ou no console do computador onde seu arquivo JS estará sendo executado")
+```
+
+### ⚠️⚠️⚠️Case Sensitive ⚠️⚠️⚠️
+ É muito importante entender que o interpretador Javascript leva muito a sério a declaração de variável, por isso , se você decide declarar uma variável com um nome, fique certo de que sempre usará **O MESMO NOME** spara recuperar o valor daquela variável
+
+ Na maioria das vezes, ignorar essa regra te deixará um pouco frustrada em frente a tela do seu computador durante horas tentando entender o que você errou até perceber que colocou uma maiúscula no lugar de uma minúscula e etc...
+
+ **POR ISSO PRESTE ATENÇÃO:**
+```Javascript
+var EsseNome != esseNome != essenome != ESSENOME ...
+```
+
+Javascript ser uma linguagem Case sensitive significa que o Javascript vai registrar a etique respeitando religiosamente a forma como você declarou.
+
+### Clean Code: Variáveis
+Programar é sobre empatia com as pessoas e até o seu EU do futuro. Escrever código nem sempre é sobre fazer um código que funciona mas ter consciência que esse seu código deve ser capaz de evoluir e ser corrigido facilmente pelas pessoas que passarem por ele.
+
+O conceito de "Código Limpo" tenta indicar algumas **boas práticas** na hora que você estiver escrevendo seu código visando a compreensão, manutenção e organização dele.
+
+Vamos ver o que o clean code nos ensina a respeito de variáveis:
+
+- Sempre use nomes que declaram o que sua variável armazena
+- Evite usar caracteres especiais (^,ç,~,´...) nos nomes de suas variáveis.
+- Variáveis normalmente são escritas em cammel case e snake case.
+  - cammelCase: Inicia com letra minúscula e substituí o espaço por uma letra em caixa alta. Usada como nome de variável ou métodos no javascript.
+  - snake_case: todas as letras minusculas, o espaço é substituído por underline. Pode ser usada como nome de variável e de métodos também, comum no Python.
+  - PascalCase: O mesmo que cammelCase mas inicia com letra maiúscula. Usada como nome de classes.
+  - MACRO_CASE: Parecido com o snake case mas todas são maiúsculas. Normalmente usada como variáveis/constantes globais.
+- Tente evitar nomes que podem ser mal interpretados ou potencialmente confusos. Usar abreviações é um no-no. Evite sempre.
+- Evite usar variáveis muito parecidas umas com as outras, isso pode confundir você na hora de recuperar o valor delas ao longo do código.
+- Crie variáveis que sejam fáceis de buscar.
+- O javascript não permite que você escreva variáveis que comecem com números.
+
+
 ### Tipos de dados
 
-### Operadores
+**String**
 
-***
+O tipo de dados String é usado para representar sequências de caracteres. Strings são declaradas usando aspas simples ou duplas. Por exemplo:
+
+
+```javascript
+let nome = "Maria";
+let sobrenome = 'Silva';
+```
+**Number**
+
+O tipo de dados Number é usado para representar números, tanto inteiros quanto decimais. Por exemplo:
+
+
+```javascript
+let idade = 20;
+let altura = 1.75;
+```
+**Boolean**
+
+O tipo de dados Boolean é usado para representar valores verdadeiros ou falsos. Por exemplo:
+
+
+```javascript
+let ativado = true;
+let desativado = false;
+```
+**Null**
+
+O tipo de dados Null é usado para representar um valor vazio ou nulo. Por exemplo:
+
+```Javascript
+let variavel = null;
+```
+**Undefined**
+
+O tipo de dados Undefined é usado para representar uma variável que ainda não foi atribuída a um valor. Por exemplo:
+```Javascript
+let variavel;
+console.log(variavel); // undefined
+```
+
+### tipo Object
+O tipo de dados Object é usado para representar objetos, que podem conter propriedades com diferentes tipos diferentes. Por exemplo:
+
+```Javascript
+let pessoa = {
+  nome: "Maria",
+  idade: 20,
+  altura: 1.75,
+};
+```
+**typeof**
+Um utilitário que pode ser utilizado para verificar o tipo de alguma variável é o `typeof` esse método verifica o tipo de um dado.
+```Javascript
+let nome = "Manuelly"
+
+console.log(typeof(nome)) // String
+```
+
+### Operadores
+JavaScript tem muitos operadores diferentes que você pode usar para manipular e comparar valores. Aqui estão alguns dos operadores mais comuns em JavaScript:
+
+1. Operadores Aritméticos
+   
+Os operadores aritméticos são usados para realizar operações matemáticas em valores numéricos, incluindo adição (+), subtração (-), multiplicação (*), divisão (/), resto da divisão (%), incremento (++) e decremento (--).
+
+  
+```Javascript
+let a = 10;
+let b = 5;
+
+console.log(a + b); // 15
+console.log(a - b); // 5
+console.log(a * b); // 50
+console.log(a / b); // 2
+console.log(a % b); // 0
+
+```
+2. Operadores de Atribuição
+Os operadores de atribuição são usados para atribuir valores a variáveis. Eles incluem o sinal de igual (=), bem como operadores compostos, como adição e atribuição (+=), subtração e atribuição (-=), multiplicação e atribuição (*=), divisão e atribuição (/=) e resto da divisão e atribuição (%=).
+
+Exemplo:
+
+```javascript
+let a = 10;
+
+a += 5; // Equivalente a: a = a + 5;
+console.log(a); // 15
+
+a -= 5; // Equivalente a: a = a - 5;
+console.log(a); // 10
+
+a *= 2; // Equivalente a: a = a * 2;
+console.log(a); // 20
+
+a /= 4; // Equivalente a: a = a / 4;
+console.log(a); // 5
+
+a %= 3; // Equivalente a: a = a % 3;
+console.log(a); // 2
+```
+
+3. Operadores de Comparação
+Os operadores de comparação são usados para comparar valores e retornar verdadeiro ou falso. Eles incluem igual (==), estritamente igual (===), diferente (!= ou !==), estritamente diferente, maior que (>), menor que (<), maior ou igual (>=) e menor ou igual (<=).
+
+```Javascript
+let x = 5;
+let y = "5";
+
+console.log(x == y); // true
+console.log(x === y); // false
+console.log(x != y); // false
+console.log(x !== y); // true
+console.log(x > y); // false
+console.log(x < y); // false
+console.log(x >= y); // true
+console.log(x <= y); // true
+
+```
+4. Operadores Lógicos
+Os operadores lógicos são usados para avaliar expressões lógicas e retornar verdadeiro ou falso. Eles incluem e lógico (&&), ou lógico (||) e negação lógica (!).
+
+
+```Javascript
+let x = 5;
+let y = 2;
+let z = 8;
+
+console.log(x > y && x < z); // true
+console.log(x > y || x > z); // true
+console.log(!(x > y)); // false
+
+```
+  ***
 ### Exercícios 
 * [Exercicio para sala](https://github.com/mflilian/repo-example/tree/main/exercicios/para-sala)
 * [Exercicio para casa](https://github.com/mflilian/repo-example/tree/main/exercicios/para-casa)
 
-### Material da aula 
+Exercício 1:
+Crie uma variável chamada "numero" e atribua a ela um valor inteiro de sua escolha. Em seguida, crie uma condição que verifique se o valor de "numero" é par ou ímpar utilizando o operador módulo (%). Se o valor for par, exiba a mensagem "O número é par". Caso contrário, exiba a mensagem "O número é ímpar".
+
+Exercício 2:
+Crie uma variável chamada "senha" e atribua a ela uma string com uma senha de sua escolha. Em seguida, crie uma segunda variável chamada "tentativa" e atribua a ela uma string com uma tentativa de senha. Utilize o operador de comparação (==) para verificar se "tentativa" é igual a "senha". Se forem iguais, exiba a mensagem "Acesso concedido". Caso contrário, exiba a mensagem "Senha incorreta".
+### Material da aula
 
 ### Links Úteis
-- [Lorem Ipsum](https://www.lipsum.com/feed/html)
-- [Lorem Ipsum](https://www.lipsum.com/feed/html)
-- [Lorem Ipsum](https://www.lipsum.com/feed/html)
-- [Lorem Ipsum](https://www.lipsum.com/feed/html)
+
 
 
 <p align="center">
