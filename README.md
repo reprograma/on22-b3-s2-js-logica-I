@@ -81,6 +81,37 @@ Veja o exemplo de uma variável inicializada:
 
  Aqui vai uma ilustração:
  ![Variaveis](assets/variaveis.png)
+
+ ### let e var
+Existe duas formas de declarar variáveis no Javascript, uma é utilizando a palavra reservada `var` como apresentei lá em cima, porém, existe também a outra forma de declarar uma variável utilizando a palavra reservada `let`.
+
+Podemos declarar dessas duas formas, mas por enquanto vamos priorizar usar `var` pois existe uma certa diferença entre elas. Vamos dizer que o `let` é usado dentro de **blocos** enquanto o `var` normalmente é usado dentro das funções;
+
+O termo de variável significa que o valor ou tipo que será armazenado poderá ser alterado ao longo da execução do seu código.
+
+Exemplo de variável:
+O preço da picanha, sabemos que desde 2023 o preço da picanha vem diminuindo nos supermercados do nosso país. Como esse valor será variável e precisará ser ajustado poderíamos facilmente usa-lo como uma variável
+
+```Javascript
+var valorDaPicanha = 29.00
+```
+
+### Const
+Como na matemática, na programação também temos valores que podem mudar ( variáveis ) e valores constantes, mas no Javascript para declarar um valor que não sofrerá alteração temos a palavra reservada `const`.
+
+Aqui o exemplo de **declaração e inicialização** de uma constante:
+```Javascript
+const issoEUmaConstante = true
+```
+
+Como exemplo de uma constante:
+O valor de π (pi) é uma constante. Para utilizar esse valor em nosso código poderíamos armazena-lo como uma constante.
+
+```Javascript
+const valorDePi = 3.14
+```
+
+Ao longo de seu aprendizado você saberá quando usar uma constante ou uma variáviável.
 ### Tipos de dados
 
 ### Operadores
