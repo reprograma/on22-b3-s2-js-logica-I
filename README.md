@@ -24,29 +24,29 @@ O que veremos na aula de hoje?
 
 # **Conteúdo**
 * [O que é Javascript](#o-que-é-javascript)
- 1. [Javascript não é Java](#javascript-não-é-java)
- 2. [Por que Javascript](#por-que-javascript)
- 3. [NodeJS](#nodejs)
+  * [Javascript não é Java](#introdução-javascript-não-é-java)
+  * [Por que Javascript](#por-que-javascript)
+  * [NodeJS](#nodejs)
 * [Variáveis](#variáveis)
- 1. [Declaração](#declaração)
- 2. [Inicialização](#inicialização)
- 3. [Let e Var](#let-e-var)
- 4. [Const](#const)
- 5. [Palavras Reservadas](#palavras-reservadas)
- 6. [Case Sensitive](#case-sensitive)
- - [Clean Code: Variáveis](#clean-code-variáveis)
+  *  [Declaração](#declaração)
+  *  [Inicialização](#inicialização)
+  *  [Let e Var](#let-e-var)
+  *  [Const](#const)
+  *  [Palavras Reservadas](#palavras-reservadas)
+  *  [Case Sensitive](#%EF%B8%8F%EF%B8%8F%EF%B8%8Fcase-sensitive-%EF%B8%8F%EF%B8%8F%EF%B8%8F)
+  *  [Clean Code: Variáveis](#clean-code-variáveis)
 * [Tipos de dados](#tipos-de-dados)
- 1. [String](#string)
- 2. [Number](#number)
- 3. [Boolean](#boolean)
- 4. [Null](#null)
- 5. [Undefined](#undefined)
- 6. [Tipo Object](#tipo-object)
+  * [String](#string)
+  * [Number](#number)
+  * [Boolean](#boolean)
+  * [Null](#null)
+  * [Undefined](#undefined)
+  * [Tipo Object](#tipo-object)
 * [Operadores](#operadores)
- 1. [Aritméticos](#aritiméticos)
- 2. [Atribuição](#atribuição)
- 3. [Comparação](#comparação)
- 4. [Lógico](#lógico)
+  * [Aritméticos](#operadores-aritméticos)
+  * [Atribuição](#operadores-de-atribuição)
+  * [Comparação](#operadores-de-comparação)
+  * [Lógico](#operadores-lógicos)
 
 ## O que é Javascript
  <br>
@@ -106,6 +106,7 @@ Veja o exemplo de uma variável inicializada:
  Agora sim, eu acabei de pegar uma frase - vamos chamar de string de agora em diante, ta? - e jogar dentro da minha gaveta com a etiqueta `nomeDaMinhaVariável`
 
  Aqui vai uma ilustração:
+ 
  ![Variaveis](assets/variaveis.png)
 
  ### let e var
@@ -134,6 +135,7 @@ const issoEUmaConstante = true
 ```
 
 Como exemplo de uma constante:
+
 O valor de π (pi) é uma constante. Para utilizar esse valor em nosso código poderíamos armazena-lo como uma constante.
 
 ```Javascript
@@ -192,7 +194,7 @@ Vamos ver o que o clean code nos ensina a respeito de variáveis:
 
 ## Tipos de dados
 
-**String**
+### **String**
 
 O tipo de dados String é usado para representar sequências de caracteres. Strings são declaradas usando aspas simples ou duplas. Por exemplo:
 
@@ -201,7 +203,7 @@ O tipo de dados String é usado para representar sequências de caracteres. Stri
 let nome = "Maria";
 let sobrenome = 'Silva';
 ```
-**Number**
+### **Number**
 
 O tipo de dados Number é usado para representar números, tanto inteiros quanto decimais. Por exemplo:
 
@@ -210,7 +212,7 @@ O tipo de dados Number é usado para representar números, tanto inteiros quanto
 let idade = 20;
 let altura = 1.75;
 ```
-**Boolean**
+### **Boolean**
 
 O tipo de dados Boolean é usado para representar valores verdadeiros ou falsos. Por exemplo:
 
@@ -219,14 +221,14 @@ O tipo de dados Boolean é usado para representar valores verdadeiros ou falsos.
 let ativado = true;
 let desativado = false;
 ```
-**Null**
+### **Null**
 
 O tipo de dados Null é usado para representar um valor vazio ou nulo. Por exemplo:
 
 ```Javascript
 let variavel = null;
 ```
-**Undefined**
+### **Undefined**
 
 O tipo de dados Undefined é usado para representar uma variável que ainda não foi atribuída a um valor. Por exemplo:
 ```Javascript
@@ -259,7 +261,7 @@ Neste caso, o typeof retorna a string "number", indicando que o valor da variáv
 ### Operadores
 JavaScript tem muitos operadores diferentes que você pode usar para manipular e comparar valores. Aqui estão alguns dos operadores mais comuns em JavaScript:
 
-1. Operadores Aritméticos
+### Operadores Aritméticos
    
 Os operadores aritméticos são usados para realizar operações matemáticas em valores numéricos, incluindo adição (+), subtração (-), multiplicação (*), divisão (/), resto da divisão (%), incremento (++) e decremento (--).
 
@@ -275,7 +277,7 @@ console.log(a / b); // 2
 console.log(a % b); // 0
 
 ```
-2. Operadores de Atribuição
+### Operadores de Atribuição
 
 Os operadores de atribuição são usados para atribuir valores a variáveis. Eles incluem o sinal de igual (=), bem como operadores compostos, como adição e atribuição (+=), subtração e atribuição (-=), multiplicação e atribuição (*=), divisão e atribuição (/=) e resto da divisão e atribuição (%=).
 
@@ -300,7 +302,7 @@ a %= 3; // Equivalente a: a = a % 3;
 console.log(a); // 2
 ```
 
-3. Operadores de Comparação
+### Operadores de Comparação
 
 Os operadores de comparação são usados para comparar valores e retornar verdadeiro ou falso. Eles incluem igual (==), estritamente igual (===), diferente (!= ou !==), estritamente diferente, maior que (>), menor que (<), maior ou igual (>=) e menor ou igual (<=).
 
@@ -318,7 +320,7 @@ console.log(x >= y); // true
 console.log(x <= y); // true
 
 ```
-4. Operadores Lógicos
+### Operadores Lógicos
 
 Os operadores lógicos são usados para avaliar expressões lógicas e retornar verdadeiro ou falso. Eles incluem e lógico (&&), ou lógico (||) e negação lógica (!).
 
