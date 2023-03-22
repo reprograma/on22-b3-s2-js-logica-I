@@ -4,7 +4,7 @@
 
 # Tema da Aula
 
-Turma Online 22 - B3  | Back-end | Semana X | 2023 | Professora X
+Turma Online 22 - B3  | Back-end | Semana 2 | 2023 | Professora Manuelly Suzik
 
 ### Instruções
 Antes de começar, vamos organizar nosso setup.
@@ -167,7 +167,7 @@ Vamos ver o que o clean code nos ensina a respeito de variáveis:
 - O javascript não permite que você escreva variáveis que comecem com números.
 
 
-### Tipos de dados
+## Tipos de dados
 
 **String**
 
@@ -222,12 +222,15 @@ let pessoa = {
 };
 ```
 **typeof**
-Um utilitário que pode ser utilizado para verificar o tipo de alguma variável é o `typeof` esse método verifica o tipo de um dado.
-```Javascript
-let nome = "Manuelly"
+O typeof é um operador em JavaScript que permite que você verifique o tipo de um valor. Ele retorna o tipo da variável em forma de string.
 
-console.log(typeof(nome)) // String
+Por exemplo, se você tiver uma variável x e quiser verificar o tipo dela, você pode usar o typeof da seguinte forma:
+
+```javascript
+let x = 10;
+console.log(typeof x); // saída: "number"
 ```
+Neste caso, o typeof retorna a string "number", indicando que o valor da variável x é do tipo número.
 
 ### Operadores
 JavaScript tem muitos operadores diferentes que você pode usar para manipular e comparar valores. Aqui estão alguns dos operadores mais comuns em JavaScript:
@@ -313,6 +316,7 @@ Crie uma variável chamada "numero" e atribua a ela um valor inteiro de sua esco
 
 Exercício 2:
 Crie uma variável chamada "senha" e atribua a ela uma string com uma senha de sua escolha. Em seguida, crie uma segunda variável chamada "tentativa" e atribua a ela uma string com uma tentativa de senha. Utilize o operador de comparação (==) para verificar se "tentativa" é igual a "senha". Se forem iguais, exiba a mensagem "Acesso concedido". Caso contrário, exiba a mensagem "Senha incorreta".
+
 ### Material da aula
 
 ### Links Úteis
