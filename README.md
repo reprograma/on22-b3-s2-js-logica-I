@@ -2,7 +2,7 @@
   <img src="assets/reprograma-fundos-claros.png" alt="logo reprograma" width="500">
 </h1>
 
-# Tema da Aula
+# Lógica I
 
 Turma Online 22 - B3  | Back-end | Semana 2 | 2023 | Professora Manuelly Suzik
 
