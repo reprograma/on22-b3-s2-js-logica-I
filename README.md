@@ -81,7 +81,7 @@ Baixe o NODEJS para seu computador [aqui](https://nodejs.org/en/download/)
 
 ### **Console**
 
-    Como normalmente o navegador é responsável por "exibir" a execução de códigos Javascript contidos nas páginas web. Se o NODEJS está fora do navegador, como conseguimos observar as saídas de execução de nossos códigos Javascript? A resposta é: Pelo console.
+  Como normalmente o navegador é responsável por "exibir" a execução de códigos Javascript contidos nas páginas web. Se o NODEJS está fora do navegador, como conseguimos observar as saídas de execução de nossos códigos Javascript? A resposta é: Pelo console.
 
 ### Console.log
 ~~É a principal ferramenta de debug de todo desenvolvidor javascript~~
@@ -126,7 +126,7 @@ O termo `variável` significa que o valor ou tipo que será armazenado na memór
 
 Exemplo de variável:
 
-    O preço da picanha, sabemos que desde 2023 o preço da picanha vem diminuindo nos supermercados do nosso país. Como esse valor será variável e precisará ser ajustado poderíamos facilmente usa-lo como uma variável
+  **Sabemos que desde o começo de 2023 o preço da picanha vem diminuindo nos supermercados do nosso país. Como esse valor será variável e precisará ser ajustado poderíamos facilmente usa-lo como uma variável**
 
 Usaríamos essa declaração para referir ao preço da picanha:
 ```Javascript
@@ -149,7 +149,7 @@ const issoEUmaConstante = true
 
 Como exemplo de uma constante:
 
-    O valor de π (pi) é uma constante. Para utilizar esse valor em nosso código poderíamos armazena-lo como uma constante.
+  **O valor de π (pi) é uma constante. Para utilizar esse valor em nosso código poderíamos armazena-lo como uma constante.**
 
 Então para registrar esse valor usaríamos uma constante, dessa forma:
 ```Javascript
