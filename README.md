@@ -310,7 +310,16 @@ console.log(a); // 2
 
 ### Operadores de Comparação
 
-Os operadores de comparação são usados para comparar valores e retornar verdadeiro ou falso. Eles incluem igual (==), estritamente igual (===), diferente (!= ou !==), estritamente diferente, maior que (>), menor que (<), maior ou igual (>=) e menor ou igual (<=).
+Os operadores de comparação são usados para comparar valores e retornar verdadeiro ou falso. 
+
+Eles incluem:
+  - igual (==)
+  - estritamente igual (===),
+  - diferente (!= ou !==) estritamente diferente
+  - maior que (>)
+  - menor que (<)
+  - maior ou igual (>=)
+  - menor ou igual (<=).
 
 ```Javascript
 let x = 5;
@@ -353,11 +362,6 @@ Crie uma variável chamada "numero" e atribua a ela um valor inteiro de sua esco
 Exercício 2:
 
 Crie uma variável chamada "senha" e atribua a ela uma string com uma senha de sua escolha. Em seguida, crie uma segunda variável chamada "tentativa" e atribua a ela uma string com uma tentativa de senha. Utilize o operador de comparação (==) para verificar se "tentativa" é igual a "senha". Se forem iguais, exiba a mensagem "Acesso concedido". Caso contrário, exiba a mensagem "Senha incorreta".
-
-### Material da aula
-
-### Links Úteis
-
 
 
 <p align="center">
