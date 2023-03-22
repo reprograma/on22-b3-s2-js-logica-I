@@ -73,12 +73,24 @@ O Javascript é uma linguagem dinâmica e fracamente tipada. Isso significa que 
 ### NodeJS
   Vamos ser simples: O NodeJS executa códigos javascript fora de um navegador.
   
-  Como o Javascript foi escrito - em sua natureza - para a WEB os navegadores tem um mecanismo que é capaz de ler javascript e executar. Se você tirar essa peça do navegador você terá uma **engine** que é a peça principal para o NodeJS funcionar. Essa ilustração talvez possa te ajudar ~~ou não~~
+  Como o Javascript foi escrito - em sua natureza - para a WEB os navegadores tem um mecanismo que é capaz de ler javascript e executar. Se você tirar essa peça do navegador você terá uma **JS engine** que é a peça principal para o NodeJS funcionar. Essa ilustração talvez possa te ajudar ~~ou não~~:
+
+  ![nodejs](/assets/standalone-js.png)
   
 Baixe o NODEJS para seu computador [aqui](https://nodejs.org/en/download/)
 
-  - **Console**
+### **Console**
+
     Como normalmente o navegador é responsável por "exibir" a execução de códigos Javascript contidos nas páginas web. Se o NODEJS está fora do navegador, como conseguimos observar as saídas de execução de nossos códigos Javascript? A resposta é: Pelo console.
+
+### Console.log
+~~É a principal ferramenta de debug de todo desenvolvidor javascript~~
+
+A função nativa do Javascript `console.log()` é bastante útil para exibir a saída de dados ou para apresentar mensagens de erro no console do seu navegador ou no seu terminal( no caso do NodeJS ).
+
+```Javascript
+console.log("Essa mensagem aparecerá no console do navegador, ou no console do computador onde seu arquivo JS estará sendo executado")
+```
 
 ## Variáveis
  
@@ -103,8 +115,6 @@ Veja o exemplo de uma variável inicializada:
  ```
 
  Agora sim, eu acabei de pegar uma frase - vamos chamar de string de agora em diante, ta? - e jogar dentro da minha gaveta com a etiqueta `nomeDaMinhaVariável`
-
- Aqui vai uma ilustração:
  
 
  ### let e var
@@ -149,14 +159,6 @@ Existem pelo menos uma centena de palavras reservadas que o javascript utiliza, 
 
 A IDE irá sempre indicar quando você usar uma palavra reservada então não precisa se precoupar em decorar todas.
 
-### Console.log
-~~É a ferramenta de debug de todo desenvolvidor javascript~~
-
-A classe nativa do Javascript `Console()` é bastante útil quando estamos querendo exibir a saída de dados. O método `log` permite que consigamos escrever diretamente no console.
-
-```Javascript
-console.log("Essa mensagem aparecerá no console do navegador, ou no console do computador onde seu arquivo JS estará sendo executado")
-```
 
 ### ⚠️⚠️⚠️Case Sensitive ⚠️⚠️⚠️
  É muito importante entender que o interpretador Javascript leva muito a sério a declaração de variável, por isso , se você decide declarar uma variável com um nome, fique certo de que sempre usará **O MESMO NOME** spara recuperar o valor daquela variável
