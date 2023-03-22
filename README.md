@@ -15,14 +15,38 @@ Antes de começar, vamos organizar nosso setup.
 ### **Resumo**
 O que veremos na aula de hoje?
 
-* O que é Javascript
-* Variáveis
-* Tipos de dados
-* Operadores
+* [O que é Javascript](#o-que-é-javascript)
+* [Variáveis](#variáveis)
+* [Tipos de dados](#tipos-de-dados)
+* [Operadores](#operadores)
   
 <br>
 
 # **Conteúdo**
+* [O que é Javascript](#o-que-é-javascript)
+ 1. [Javascript não é Java](#javascript-não-é-java)
+ 2. [Por que Javascript](#por-que-javascript)
+ 3. [NodeJS](#nodejs)
+* [Variáveis](#variáveis)
+ 1. [Declaração](#declaração)
+ 2. [Inicialização](#inicialização)
+ 3. [Let e Var](#let-e-var)
+ 4. [Const](#const)
+ 5. [Palavras Reservadas](#palavras-reservadas)
+ 6. [Case Sensitive](#case-sensitive)
+ - [Clean Code: Variáveis](#clean-code-variáveis)
+* [Tipos de dados](#tipos-de-dados)
+ 1. [String](#string)
+ 2. [Number](#number)
+ 3. [Boolean](#boolean)
+ 4. [Null](#null)
+ 5. [Undefined](#undefined)
+ 6. [Tipo Object](#tipo-object)
+* [Operadores](#operadores)
+ 1. [Aritméticos](#aritiméticos)
+ 2. [Atribuição](#atribuição)
+ 3. [Comparação](#comparação)
+ 4. [Lógico](#lógico)
 
 ## O que é Javascript
  <br>
@@ -221,6 +245,7 @@ let pessoa = {
 };
 ```
 **typeof**
+
 O typeof é um operador em JavaScript que permite que você verifique o tipo de um valor. Ele retorna o tipo da variável em forma de string.
 
 Por exemplo, se você tiver uma variável x e quiser verificar o tipo dela, você pode usar o typeof da seguinte forma:
@@ -251,6 +276,7 @@ console.log(a % b); // 0
 
 ```
 2. Operadores de Atribuição
+
 Os operadores de atribuição são usados para atribuir valores a variáveis. Eles incluem o sinal de igual (=), bem como operadores compostos, como adição e atribuição (+=), subtração e atribuição (-=), multiplicação e atribuição (*=), divisão e atribuição (/=) e resto da divisão e atribuição (%=).
 
 Exemplo:
@@ -275,6 +301,7 @@ console.log(a); // 2
 ```
 
 3. Operadores de Comparação
+
 Os operadores de comparação são usados para comparar valores e retornar verdadeiro ou falso. Eles incluem igual (==), estritamente igual (===), diferente (!= ou !==), estritamente diferente, maior que (>), menor que (<), maior ou igual (>=) e menor ou igual (<=).
 
 ```Javascript
@@ -292,6 +319,7 @@ console.log(x <= y); // true
 
 ```
 4. Operadores Lógicos
+
 Os operadores lógicos são usados para avaliar expressões lógicas e retornar verdadeiro ou falso. Eles incluem e lógico (&&), ou lógico (||) e negação lógica (!).
 
 
@@ -311,9 +339,11 @@ console.log(!(x > y)); // false
 * [Exercicio para casa](https://github.com/mflilian/repo-example/tree/main/exercicios/para-casa)
 
 Exercício 1:
+
 Crie uma variável chamada "numero" e atribua a ela um valor inteiro de sua escolha. Em seguida, crie uma condição que verifique se o valor de "numero" é par ou ímpar utilizando o operador módulo (%). Se o valor for par, exiba a mensagem "O número é par". Caso contrário, exiba a mensagem "O número é ímpar".
 
 Exercício 2:
+
 Crie uma variável chamada "senha" e atribua a ela uma string com uma senha de sua escolha. Em seguida, crie uma segunda variável chamada "tentativa" e atribua a ela uma string com uma tentativa de senha. Utilize o operador de comparação (==) para verificar se "tentativa" é igual a "senha". Se forem iguais, exiba a mensagem "Acesso concedido". Caso contrário, exiba a mensagem "Senha incorreta".
 
 ### Material da aula
