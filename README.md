@@ -100,7 +100,7 @@ console.log("Essa mensagem aparecerá no console do navegador, ou no console do 
  Veja o exemplo abaixo:
 
  ```Javascript
- var nomeDaMinhaVariavel
+ let nomeDaMinhaVariavel
  ```
 
  Isso é o suficiente para declararmos um espaço na memória que se chamará `nomeDaMinhaVariavel`. Podemos usar a analogia de que se a memória do computador fosse uma gaveta, o nome da variável seria a etiqueta. Dessa forma sempre que quiséssemos **recuperar** esse valor só precisaríamos ir até a gaveta com aquela etiqueta.
@@ -111,29 +111,34 @@ O valor daquele espaço só será preenchido quando inicializarmos aquela variá
 Veja o exemplo de uma variável inicializada:
 
  ```Javascript
- var nomeDaMinhaVariavel = "Aprender com reprograma é bom demais"
+ let nomeDaMinhaVariavel = "Aprender com reprograma é bom demais"
  ```
 
  Agora sim, eu acabei de pegar uma frase - vamos chamar de string de agora em diante, ta? - e jogar dentro da minha gaveta com a etiqueta `nomeDaMinhaVariável`
  
 
  ### let e var
-Existe duas formas de declarar variáveis no Javascript, uma é utilizando a palavra reservada `var` como apresentei lá em cima, porém, existe também a outra forma de declarar uma variável utilizando a palavra reservada `let`.
+Existe duas formas de declarar variáveis no Javascript, uma é utilizando a palavra reservada `let` como apresentei lá em cima, porém, existe também a outra forma de declarar uma variável utilizando a palavra reservada `var`.
 
-Podemos declarar dessas duas formas, mas por enquanto vamos priorizar usar `let` pois existe uma certa diferença entre elas. Vamos dizer que o `let` é usado dentro de **blocos** enquanto o `var` normalmente é usado dentro das funções e podem inferir alguns comportamentos que não desejamos;
+Mesmo podendo declarar das duas formas, usar `var` pode provocar alguns comportamentos inesperados então até que fique claro a diferença entre elas , por enquanto, vamos priorizar usar `let`.
 
-O termo de variável significa que o valor ou tipo que será armazenado poderá ser alterado ao longo da execução do seu código.
+O termo `variável` significa que o valor ou tipo que será armazenado na memória pode sofrer alterações de tipo e valor longo da execução do código.
 
 Exemplo de variável:
-O preço da picanha, sabemos que desde 2023 o preço da picanha vem diminuindo nos supermercados do nosso país. Como esse valor será variável e precisará ser ajustado poderíamos facilmente usa-lo como uma variável
 
+    O preço da picanha, sabemos que desde 2023 o preço da picanha vem diminuindo nos supermercados do nosso país. Como esse valor será variável e precisará ser ajustado poderíamos facilmente usa-lo como uma variável
+
+Usaríamos essa declaração para referir ao preço da picanha:
 ```Javascript
-var valorDaPicanha = 29.00
+let valorDaPicanha = 29.00
 ```
 É importante saber que: Ao declarar variáveis você pode escolher o nome que quiser pra elas, mas o Javascript não vai permitir que você:
 
 - Crie variáveis que começam com números
-- Variáveis com espaço. Ex: `var Esse nome` não é uma variável válida
+- Variáveis com espaço.
+
+Ex: `var Esse nome` não é uma variável válida
+
 ### Const
 Como na matemática, na programação também temos valores que podem mudar ( variáveis ) e valores constantes, mas no Javascript para declarar um valor que não sofrerá alteração temos a palavra reservada `const`.
 
@@ -144,8 +149,9 @@ const issoEUmaConstante = true
 
 Como exemplo de uma constante:
 
-O valor de π (pi) é uma constante. Para utilizar esse valor em nosso código poderíamos armazena-lo como uma constante.
+    O valor de π (pi) é uma constante. Para utilizar esse valor em nosso código poderíamos armazena-lo como uma constante.
 
+Então para registrar esse valor usaríamos uma constante, dessa forma:
 ```Javascript
 const valorDePi = 3.14
 ```
