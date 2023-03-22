@@ -75,7 +75,6 @@ O Javascript é uma linguagem dinâmica e fracamente tipada. Isso significa que 
   
   Como o Javascript foi escrito - em sua natureza - para a WEB os navegadores tem um mecanismo que é capaz de ler javascript e executar. Se você tirar essa peça do navegador você terá uma **engine** que é a peça principal para o NodeJS funcionar. Essa ilustração talvez possa te ajudar ~~ou não~~
   
-  ![nodejs](assets/nodejs.png)
 Baixe o NODEJS para seu computador [aqui](https://nodejs.org/en/download/)
 
   - **Console**
@@ -107,7 +106,6 @@ Veja o exemplo de uma variável inicializada:
 
  Aqui vai uma ilustração:
  
- ![Variaveis](assets/variaveis.png)
 
  ### let e var
 Existe duas formas de declarar variáveis no Javascript, uma é utilizando a palavra reservada `var` como apresentei lá em cima, porém, existe também a outra forma de declarar uma variável utilizando a palavra reservada `let`.
