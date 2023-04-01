@@ -2,28 +2,51 @@
   <img src="assets/reprograma-fundos-claros.png" alt="logo reprograma" width="500">
 </h1>
 
-# Tema da Aula
+# Lógica I
 
-Turma Online 22 - B3  | Back-end | Semana X | 2023 | Professora X
+Turma Online 22 - B3  | Back-end | Semana 2 | 2023 | Professora Manuelly Suzik
 
 ### Instruções
 Antes de começar, vamos organizar nosso setup.
 * Fork esse repositório 
 * Clone o fork na sua máquina (Para isso basta abrir o seu terminal e digitar `git clone url-do-seu-repositorio-forkado`)
 * Entre na pasta do seu repositório (Para isso basta abrir o seu terminal e digitar `cd nome-do-seu-repositorio-forkado`)
-* [Add outras intrucoes caso necessario]
 
 ### **Resumo**
 O que veremos na aula de hoje?
 
-* O que é Javascript
-* Variáveis
-* Tipos de dados
-* Operadores
+* [O que é Javascript](#o-que-é-javascript)
+* [Variáveis](#variáveis)
+* [Tipos de dados](#tipos-de-dados)
+* [Operadores](#operadores)
   
 <br>
 
 # **Conteúdo**
+* [O que é Javascript](#o-que-é-javascript)
+  * [Javascript não é Java](#introdução-javascript-não-é-java)
+  * [Por que Javascript](#por-que-javascript)
+  * [NodeJS](#nodejs)
+* [Variáveis](#variáveis)
+  *  [Declaração](#declaração)
+  *  [Inicialização](#inicialização)
+  *  [Let e Var](#let-e-var)
+  *  [Const](#const)
+  *  [Palavras Reservadas](#palavras-reservadas)
+  *  [Case Sensitive](#%EF%B8%8F%EF%B8%8F%EF%B8%8Fcase-sensitive-%EF%B8%8F%EF%B8%8F%EF%B8%8F)
+  *  [Clean Code: Variáveis](#clean-code-variáveis)
+* [Tipos de dados](#tipos-de-dados)
+  * [String](#string)
+  * [Number](#number)
+  * [Boolean](#boolean)
+  * [Null](#null)
+  * [Undefined](#undefined)
+  * [Tipo Object](#tipo-object)
+* [Operadores](#operadores)
+  * [Aritméticos](#operadores-aritméticos)
+  * [Atribuição](#operadores-de-atribuição)
+  * [Comparação](#operadores-de-comparação)
+  * [Lógico](#operadores-lógicos)
 
 ## O que é Javascript
  <br>
@@ -50,13 +73,24 @@ O Javascript é uma linguagem dinâmica e fracamente tipada. Isso significa que 
 ### NodeJS
   Vamos ser simples: O NodeJS executa códigos javascript fora de um navegador.
   
-  Como o Javascript foi escrito - em sua natureza - para a WEB os navegadores tem um mecanismo que é capaz de ler javascript e executar. Se você tirar essa peça do navegador você terá uma **engine** que é a peça principal para o NodeJS funcionar. Essa ilustração talvez possa te ajudar ~~ou não~~
+  Como o Javascript foi escrito - em sua natureza - para a WEB os navegadores tem um mecanismo que é capaz de ler javascript e executar. Se você tirar essa peça do navegador você terá uma **JS engine** que é a peça principal para o NodeJS funcionar. Essa ilustração talvez possa te ajudar ~~ou não~~:
+
+  ![nodejs](/assets/standalone-js.png)
   
-  ![nodejs](assets/nodejs.png)
 Baixe o NODEJS para seu computador [aqui](https://nodejs.org/en/download/)
 
-  - **Console**
-    Como normalmente o navegador é responsável por "exibir" a execução de códigos Javascript contidos nas páginas web. Se o NODEJS está fora do navegador, como conseguimos observar as saídas de execução de nossos códigos Javascript? A resposta é: Pelo console.
+### **Console**
+
+  Como normalmente o navegador é responsável por "exibir" a execução de códigos Javascript contidos nas páginas web. Se o NODEJS está fora do navegador, como conseguimos observar as saídas de execução de nossos códigos Javascript? A resposta é: Pelo console.
+
+### Console.log
+~~É a principal ferramenta de debug de todo desenvolvidor javascript~~
+
+A função nativa do Javascript `console.log()` é bastante útil para exibir a saída de dados ou para apresentar mensagens de erro no console do seu navegador ou no seu terminal( no caso do NodeJS ).
+
+```Javascript
+console.log("Essa mensagem aparecerá no console do navegador, ou no console do computador onde seu arquivo JS estará sendo executado")
+```
 
 ## Variáveis
  
@@ -66,7 +100,7 @@ Baixe o NODEJS para seu computador [aqui](https://nodejs.org/en/download/)
  Veja o exemplo abaixo:
 
  ```Javascript
- var nomeDaMinhaVariavel
+ let nomeDaMinhaVariavel
  ```
 
  Isso é o suficiente para declararmos um espaço na memória que se chamará `nomeDaMinhaVariavel`. Podemos usar a analogia de que se a memória do computador fosse uma gaveta, o nome da variável seria a etiqueta. Dessa forma sempre que quiséssemos **recuperar** esse valor só precisaríamos ir até a gaveta com aquela etiqueta.
@@ -77,31 +111,34 @@ O valor daquele espaço só será preenchido quando inicializarmos aquela variá
 Veja o exemplo de uma variável inicializada:
 
  ```Javascript
- var nomeDaMinhaVariavel = "Aprender com reprograma é bom demais"
+ let nomeDaMinhaVariavel = "Aprender com reprograma é bom demais"
  ```
 
  Agora sim, eu acabei de pegar uma frase - vamos chamar de string de agora em diante, ta? - e jogar dentro da minha gaveta com a etiqueta `nomeDaMinhaVariável`
-
- Aqui vai uma ilustração:
- ![Variaveis](assets/variaveis.png)
+ 
 
  ### let e var
-Existe duas formas de declarar variáveis no Javascript, uma é utilizando a palavra reservada `var` como apresentei lá em cima, porém, existe também a outra forma de declarar uma variável utilizando a palavra reservada `let`.
+Existe duas formas de declarar variáveis no Javascript, uma é utilizando a palavra reservada `let` como apresentei lá em cima, porém, existe também a outra forma de declarar uma variável utilizando a palavra reservada `var`.
 
-Podemos declarar dessas duas formas, mas por enquanto vamos priorizar usar `let` pois existe uma certa diferença entre elas. Vamos dizer que o `let` é usado dentro de **blocos** enquanto o `var` normalmente é usado dentro das funções e podem inferir alguns comportamentos que não desejamos;
+Mesmo podendo declarar das duas formas, usar `var` pode provocar alguns comportamentos inesperados então até que fique claro a diferença entre elas , por enquanto, vamos priorizar usar `let`.
 
-O termo de variável significa que o valor ou tipo que será armazenado poderá ser alterado ao longo da execução do seu código.
+O termo `variável` significa que o valor ou tipo que será armazenado na memória pode sofrer alterações de tipo e valor longo da execução do código.
 
 Exemplo de variável:
-O preço da picanha, sabemos que desde 2023 o preço da picanha vem diminuindo nos supermercados do nosso país. Como esse valor será variável e precisará ser ajustado poderíamos facilmente usa-lo como uma variável
 
+  **Sabemos que desde o começo de 2023 o preço da picanha vem diminuindo nos supermercados do nosso país. Como esse valor será variável e precisará ser ajustado poderíamos facilmente usa-lo como uma variável**
+
+Usaríamos essa declaração para referir ao preço da picanha:
 ```Javascript
-var valorDaPicanha = 29.00
+let valorDaPicanha = 29.00
 ```
 É importante saber que: Ao declarar variáveis você pode escolher o nome que quiser pra elas, mas o Javascript não vai permitir que você:
 
 - Crie variáveis que começam com números
-- Variáveis com espaço. Ex: `var Esse nome` não é uma variável válida
+- Variáveis com espaço.
+
+Ex: `var Esse nome` não é uma variável válida
+
 ### Const
 Como na matemática, na programação também temos valores que podem mudar ( variáveis ) e valores constantes, mas no Javascript para declarar um valor que não sofrerá alteração temos a palavra reservada `const`.
 
@@ -111,8 +148,10 @@ const issoEUmaConstante = true
 ```
 
 Como exemplo de uma constante:
-O valor de π (pi) é uma constante. Para utilizar esse valor em nosso código poderíamos armazena-lo como uma constante.
 
+  **O valor de π (pi) é uma constante. Para utilizar esse valor em nosso código poderíamos armazena-lo como uma constante.**
+
+Então para registrar esse valor usaríamos uma constante, dessa forma:
 ```Javascript
 const valorDePi = 3.14
 ```
@@ -126,14 +165,6 @@ Existem pelo menos uma centena de palavras reservadas que o javascript utiliza, 
 
 A IDE irá sempre indicar quando você usar uma palavra reservada então não precisa se precoupar em decorar todas.
 
-### Console.log
-~~É a ferramenta de debug de todo desenvolvidor javascript~~
-
-A classe nativa do Javascript `Console()` é bastante útil quando estamos querendo exibir a saída de dados. O método `log` permite que consigamos escrever diretamente no console.
-
-```Javascript
-console.log("Essa mensagem aparecerá no console do navegador, ou no console do computador onde seu arquivo JS estará sendo executado")
-```
 
 ### ⚠️⚠️⚠️Case Sensitive ⚠️⚠️⚠️
  É muito importante entender que o interpretador Javascript leva muito a sério a declaração de variável, por isso , se você decide declarar uma variável com um nome, fique certo de que sempre usará **O MESMO NOME** spara recuperar o valor daquela variável
@@ -167,9 +198,9 @@ Vamos ver o que o clean code nos ensina a respeito de variáveis:
 - O javascript não permite que você escreva variáveis que comecem com números.
 
 
-### Tipos de dados
+## Tipos de dados
 
-**String**
+### **String**
 
 O tipo de dados String é usado para representar sequências de caracteres. Strings são declaradas usando aspas simples ou duplas. Por exemplo:
 
@@ -178,7 +209,7 @@ O tipo de dados String é usado para representar sequências de caracteres. Stri
 let nome = "Maria";
 let sobrenome = 'Silva';
 ```
-**Number**
+### **Number**
 
 O tipo de dados Number é usado para representar números, tanto inteiros quanto decimais. Por exemplo:
 
@@ -187,7 +218,7 @@ O tipo de dados Number é usado para representar números, tanto inteiros quanto
 let idade = 20;
 let altura = 1.75;
 ```
-**Boolean**
+### **Boolean**
 
 O tipo de dados Boolean é usado para representar valores verdadeiros ou falsos. Por exemplo:
 
@@ -196,14 +227,14 @@ O tipo de dados Boolean é usado para representar valores verdadeiros ou falsos.
 let ativado = true;
 let desativado = false;
 ```
-**Null**
+### **Null**
 
 O tipo de dados Null é usado para representar um valor vazio ou nulo. Por exemplo:
 
 ```Javascript
 let variavel = null;
 ```
-**Undefined**
+### **Undefined**
 
 O tipo de dados Undefined é usado para representar uma variável que ainda não foi atribuída a um valor. Por exemplo:
 ```Javascript
@@ -222,17 +253,21 @@ let pessoa = {
 };
 ```
 **typeof**
-Um utilitário que pode ser utilizado para verificar o tipo de alguma variável é o `typeof` esse método verifica o tipo de um dado.
-```Javascript
-let nome = "Manuelly"
 
-console.log(typeof(nome)) // String
+O typeof é um operador em JavaScript que permite que você verifique o tipo de um valor. Ele retorna o tipo da variável em forma de string.
+
+Por exemplo, se você tiver uma variável x e quiser verificar o tipo dela, você pode usar o typeof da seguinte forma:
+
+```javascript
+let x = 10;
+console.log(typeof x); // saída: "number"
 ```
+Neste caso, o typeof retorna a string "number", indicando que o valor da variável x é do tipo número.
 
 ### Operadores
 JavaScript tem muitos operadores diferentes que você pode usar para manipular e comparar valores. Aqui estão alguns dos operadores mais comuns em JavaScript:
 
-1. Operadores Aritméticos
+### Operadores Aritméticos
    
 Os operadores aritméticos são usados para realizar operações matemáticas em valores numéricos, incluindo adição (+), subtração (-), multiplicação (*), divisão (/), resto da divisão (%), incremento (++) e decremento (--).
 
@@ -248,7 +283,8 @@ console.log(a / b); // 2
 console.log(a % b); // 0
 
 ```
-2. Operadores de Atribuição
+### Operadores de Atribuição
+
 Os operadores de atribuição são usados para atribuir valores a variáveis. Eles incluem o sinal de igual (=), bem como operadores compostos, como adição e atribuição (+=), subtração e atribuição (-=), multiplicação e atribuição (*=), divisão e atribuição (/=) e resto da divisão e atribuição (%=).
 
 Exemplo:
@@ -272,8 +308,18 @@ a %= 3; // Equivalente a: a = a % 3;
 console.log(a); // 2
 ```
 
-3. Operadores de Comparação
-Os operadores de comparação são usados para comparar valores e retornar verdadeiro ou falso. Eles incluem igual (==), estritamente igual (===), diferente (!= ou !==), estritamente diferente, maior que (>), menor que (<), maior ou igual (>=) e menor ou igual (<=).
+### Operadores de Comparação
+
+Os operadores de comparação são usados para comparar valores e retornar verdadeiro ou falso. 
+
+Eles incluem:
+  - igual (==)
+  - estritamente igual (===),
+  - diferente (!= ou !==) estritamente diferente
+  - maior que (>)
+  - menor que (<)
+  - maior ou igual (>=)
+  - menor ou igual (<=).
 
 ```Javascript
 let x = 5;
@@ -289,7 +335,8 @@ console.log(x >= y); // true
 console.log(x <= y); // true
 
 ```
-4. Operadores Lógicos
+### Operadores Lógicos
+
 Os operadores lógicos são usados para avaliar expressões lógicas e retornar verdadeiro ou falso. Eles incluem e lógico (&&), ou lógico (||) e negação lógica (!).
 
 
@@ -307,16 +354,6 @@ console.log(!(x > y)); // false
 ### Exercícios 
 * [Exercicio para sala](https://github.com/mflilian/repo-example/tree/main/exercicios/para-sala)
 * [Exercicio para casa](https://github.com/mflilian/repo-example/tree/main/exercicios/para-casa)
-
-Exercício 1:
-Crie uma variável chamada "numero" e atribua a ela um valor inteiro de sua escolha. Em seguida, crie uma condição que verifique se o valor de "numero" é par ou ímpar utilizando o operador módulo (%). Se o valor for par, exiba a mensagem "O número é par". Caso contrário, exiba a mensagem "O número é ímpar".
-
-Exercício 2:
-Crie uma variável chamada "senha" e atribua a ela uma string com uma senha de sua escolha. Em seguida, crie uma segunda variável chamada "tentativa" e atribua a ela uma string com uma tentativa de senha. Utilize o operador de comparação (==) para verificar se "tentativa" é igual a "senha". Se forem iguais, exiba a mensagem "Acesso concedido". Caso contrário, exiba a mensagem "Senha incorreta".
-### Material da aula
-
-### Links Úteis
-
 
 
 <p align="center">
