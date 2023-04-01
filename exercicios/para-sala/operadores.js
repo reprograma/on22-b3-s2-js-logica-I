@@ -35,6 +35,7 @@ console.log(true || false)
 console.log(false || false)
 console.log(true || false || false || false)
 
+
 //NOT
 console.log("Exemplo NOT") //true
 console.log(!false) //true
