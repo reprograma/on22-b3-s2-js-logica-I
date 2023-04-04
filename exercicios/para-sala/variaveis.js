@@ -1,4 +1,3 @@
-var variavel
 // Declaração e Inicialização de variáveis
 let qtdAlunas = 44
 let professora = "Manuelly Suzik"

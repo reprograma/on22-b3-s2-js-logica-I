@@ -1,4 +1,3 @@
-
 const meuNome = "Manuelly Suzik"
 let nomeDeProfessoraReprograma = "Manuelly Suzik"
 
