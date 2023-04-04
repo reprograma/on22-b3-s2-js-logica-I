@@ -308,6 +308,7 @@ a %= 3; // Equivalente a: a = a % 3;
 console.log(a); // 2
 ```
 
+
 ### Operadores de Comparação
 
 Os operadores de comparação são usados para comparar valores e retornar verdadeiro ou falso. 
