@@ -1,7 +1,7 @@
 let bichoDeEstimacao = {
-    nome: "Theo",
-    idade: 3,
-    porteMedio: true
+    nome: "Roni",
+    idade: 8,
+    porteMedio: false
 } // JSO - Javascript Object
 
 "{ 'chave':'Valor'}" // JSON - Javascript Object Notation
@@ -15,17 +15,17 @@ let comanda = {
 
 
 let pessoa = {
-    nome: "Nazaré",
-    medo: "Objeto dentro de Objeto",
+    nome: "Aline",
+    desejo: "fazer um arranjo de flores",
     endereco: {
-        rua: "do desespero",
-        numero: "",
-        bairro: "",
+        rua: "Territorio do Rio",
+        numero: "34",
+        bairro: "Pituba",
         complemento: {
-            eCasa: true,
-            eApartamento: false
+            eCasa: false,
+            eApartamento: true
         }
     }
 }
 // para acessar o endereço que está dentro do Objeto pessoa
-console.log(pessoa.endereco)
+console.log(pessoa.desejo)
