@@ -4,7 +4,7 @@ const nome = "Ayla Delavi Daum"
 
 let idade = 19
 
-let meuNome = "Meu nome é "
+let meuNome = "Meu nome é " 
 
 let qtdIdade = " e tenho "
 
@@ -22,6 +22,6 @@ let saldoFinal = saldo - gastos
 
 let msgSaldoFinal = "Meu saldo final é de "
 
-let reais = " reais"
+let reais = " reais."
 
 console.log(msgSaldoFinal + saldoFinal + reais)
