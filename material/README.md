@@ -1,18 +1,35 @@
 
 <h1 align="center">
-  <img src="my_assets/nearly_logo.png" alt="nearly_logo" width="500">
+    <img src="my_assets/nearly_logo.png" alt="nearly_logo" width="500">
 </h1>
 
-# Atividade de Casa - Semana 2
+# Semana 2: resumo da aula
 
 <img src="my_assets/logic_diagram.png" alt="logic_diagram" width="150" align="right">
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-</br>
+## Introdução ao Javascript
+
+    NodeJS
+
+***
+### Variables
+
+    >declaration vs. initialization <br>
+    >let vs. var <br>
+    >const <br>
+    >reserved words <br>
+    >case sensitivity
 
 ***
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+### Datatypes
 
 ***
-<img src="my_assets/cool_bar.png" alt="git_logo">
+
+### Operators
+
+Aprendemos sobre os operadores lógicos básicos, como 
+    
+
+***
+<img src="my_assets/cool_bar.png" alt="cool_bar">
