@@ -12,7 +12,7 @@ console.log("vários métodos foram utilizados na resolução deste exercício, 
 console.log("Meu nome é " + nome + " e tenho " + idade + " anos.","<- método 1: concatenação")
 
 //method 2: comma separation
-console.log("Meu nome é", nome, "e tenho", idade, "anos.","<- método 3: comma separation")
+console.log("Meu nome é", nome, "e tenho", idade, "anos.","<- método 2: comma separation")
 
 //method 3: object
 let person = {nome, idade}
