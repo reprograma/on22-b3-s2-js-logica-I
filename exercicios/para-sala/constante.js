@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 
 const meuNome = "Manuelly Suzik"
 let nomeDeProfessoraReprograma = "Manuelly Suzik"
@@ -13,3 +14,6 @@ let NomeDaVariavel = "blabla bla"
 console.log(meuNome)
 console.log(nomeDeProfessoraReprograma)
 console.log(meuNomeDeCasada)
+=======
+const meuNome = "Gabriela Pereira"
+console.log(meuNome)
