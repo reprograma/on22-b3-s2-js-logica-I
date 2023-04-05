@@ -12,4 +12,4 @@ let saldoFinal = saldo - gastos
 saldoFinal = saldoFinal.toFixed(2)
 
 //log
-console.log("Meu saldo final é de R$" + saldoFinal + " reais.")   
+console.log("Meu saldo final é de R$", saldoFinal, "reais.")
