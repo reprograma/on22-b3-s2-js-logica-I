@@ -9,11 +9,11 @@ let idade = 27
 console.log("vários métodos foram utilizados na resolução deste exercício, por isso a repetição de sua resolução.")
 
 //method: string & variable concat
-console.log("Meu nome é " + nome + " e tenho " + idade + " anos.")
+console.log("Meu nome é " + nome + " e tenho " + idade + " anos.","<- método 1: concatenação")
 
 //method 2: comma separation
-console.log("Meu nome é", nome, "e tenho", idade, "anos.")
+console.log("Meu nome é", nome, "e tenho", idade, "anos.","<- método 3: comma separation")
 
 //method 3: object
 let person = {nome, idade}
-console.log("Meu nome é", person.nome, "e tenho", person.idade,"anos.")
+console.log("Meu nome é", person.nome, "e tenho", person.idade, "anos.","<- método 3: objeto")
