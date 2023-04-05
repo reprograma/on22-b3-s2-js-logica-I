@@ -23,4 +23,4 @@ let a = 1
 let b = 1
 let c = 3
 
-console.log('  a é menor e igual á b? ' + [a <= b] + ' e c é maior que a soma de a e b? ' + [c > (a+b)])
+console.log('a é menor e igual á b? ' + [a <= b] + ' e c é maior que a soma de a e b? ' + [c > (a+b)])
