@@ -7,6 +7,8 @@ console.log("Meu nome é "+nome+" e tenho "+idade+" anos.")
 // Exercicio 2
 let saldo = 2100
 let gastos = 2000
-let saldoFinal = 100
+let saldoFinal = saldo - gastos
 
-console.log("Meu saldo final é de "+saldoFinal+" reais.")
+saldoFinal = saldoFinal.toFixed(2)
+
+console.log("Meu saldo final é de "+saldoFinal+" reais.")   
