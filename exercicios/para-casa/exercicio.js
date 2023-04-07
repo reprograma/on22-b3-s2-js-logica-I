@@ -7,8 +7,12 @@ console.log(`Meu nome é ${nome} e tenho ${idade} anos.`);
 
 // Exeercício 02:
 
-let saldo = 100000;
-let gastos = 15000;
-let saldoFinal = saldo - gastos;
-
-console.log(`Meu saldo final é: ${saldoFinal} reais.`);
+let conta = {
+saldo: 100000,
+gastos: 15000,
+saldoFinal: null,
+mensagem: null
+}
+conta.saldoFinal = conta.saldo - conta.gastos;
+conta.mensagem = (`Meu saldo final será de ${conta.saldoFinal} reais.`);
+console.log(conta.mensagem);
