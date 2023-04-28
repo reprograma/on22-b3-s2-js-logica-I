@@ -1,4 +1,9 @@
 
+const meuNome = "Mariana"
+
+console.log(meuNome)
+
+
 const meuNome = "Manuelly Suzik"
 let nomeDeProfessoraReprograma = "Manuelly Suzik"
 
@@ -13,3 +18,4 @@ let NomeDaVariavel = "blabla bla"
 console.log(meuNome)
 console.log(nomeDeProfessoraReprograma)
 console.log(meuNomeDeCasada)
+

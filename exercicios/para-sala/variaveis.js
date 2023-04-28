@@ -1,3 +1,17 @@
+
+var variav = 1
+let qtdOnline = 44
+let nomeCurso = "Reprograma"
+let profNome = "Manuelly"
+let qtdAusente = 5
+
+let qtdPessoas = qtdAusente + qtdOnline
+
+console.log(variav)
+console.log(isNaN(qtdPessoas))
+console.log(qtdPessoas)
+
+
 var variavel
 // Declaração e Inicialização de variáveis
 let qtdAlunas = 44
@@ -15,3 +29,4 @@ console.log(professora)
 
 var variavel = 100 // Não vai dar erro pois sofrerá HOISTING
 let variavel2 = 2 // Vai dar
+
