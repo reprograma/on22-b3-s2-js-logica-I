@@ -1,17 +1,22 @@
-var variavel
+//var variavel
 // Declaração e Inicialização de variáveis
-let qtdAlunas = 44
-let professora = "Manuelly Suzik"
+let qtdAlunas = 44;
+let professora = "Manuelly Suzik";
 
 // troca de valor de uma variável
 
-console.log(variavel)
+//console.log(variavel);
 
-
-console.log(qtdAlunas)
+console.log(qtdAlunas);
 //Exibir variável no console ( Terminal )
 
-console.log(professora)
+console.log(professora);
 
-var variavel = 100 // Não vai dar erro pois sofrerá HOISTING
-let variavel2 = 2 // Vai dar
+//var variavel = 100 // Não vai dar erro pois sofrerá HOISTING
+//let variavel2 = 2 // Vai dar
+
+let pollCard = 1;
+let books = 2;
+
+console.log(pollCard);
+console.log(books);
